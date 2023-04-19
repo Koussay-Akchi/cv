@@ -8,7 +8,6 @@
     justify-content: center;
   }
   
-
   .profile-pic {
     border-radius: 50%;
     margin-bottom: 20px;
@@ -93,22 +92,22 @@ h1 {
     color: #ffffff;
     color: rgba(0, 0, 0, 0.4);
     font-size: 20px;
-    height: 50px;
-    line-height: 50px;
+    height: 35px;
+    line-height: 35px;
     position: absolute;
     right: 10px;
     top: 0;
 }
 
 
-section.percentage-bar:first-child div.title { background: 	#4B8BBE; }
-section.percentage-bar:first-child div.bar { background: #4B8BBE; }
+section.percentage-bar:first-child div.title { background: #9e1e1e; }
+section.percentage-bar:first-child div.bar { background: #dd2828; }
 
 section.percentage-bar:nth-child(2) div.title { background: #d35400; }
-section.percentage-bar:nth-child(2) div.bar { background: #d35400; }
+section.percentage-bar:nth-child(2) div.bar { background: #e67e22; }
 
-section.percentage-bar:nth-child(3) div.title { background: #F0DB4F; }
-section.percentage-bar:nth-child(3) div.bar { background:  #F0DB4A; }
+section.percentage-bar:nth-child(3) div.title { background: #27ae60; }
+section.percentage-bar:nth-child(3) div.bar { background:  #2ecc71; }
 
 section.percentage-bar:nth-child(4) div.title { background: #2980b9; }
 section.percentage-bar:nth-child(4) div.bar { background: #3498db; }
@@ -116,11 +115,12 @@ section.percentage-bar:nth-child(4) div.bar { background: #3498db; }
 section.percentage-bar:nth-child(5) div.title { background: #561e9e; }
 section.percentage-bar:nth-child(5) div.bar { background: #6f37db; }
 
-section.percentage-bar:nth-child(6) div.title { background: grey; }
-section.percentage-bar:nth-child(6) div.bar { background: grey; }
+section.percentage-bar:nth-child(6) div.title { background: #561e9e; }
+section.percentage-bar:nth-child(6) div.bar { background: #6f37db; }
 
-section.percentage-bar:nth-child(7) div.title { background: goldenrod; }
-section.percentage-bar:nth-child(7) div.bar { background: goldenrod; }
 
-section.percentage-bar:nth-child(8) div.title { background: #561e9e; }
-section.percentage-bar:nth-child(8) div.bar { background: #6f37db; }
+section.percentage-bar:nth-child(7) div.title { background: #561e9e; }
+section.percentage-bar:nth-child(7) div.bar { background: #6f37db; }
+
+section.percentage-bar:last-child div.title { background: #333333; }
+section.percentage-bar:last-child div.bar { background: #525252; }
