@@ -1,0 +1,14 @@
+.loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #333;
+  }
+  
+  .loading-container img {
+    display: block;
+    width: 200px; /* Replace with the appropriate width for your GIF */
+    height: 200px; /* Replace with the appropriate height for your GIF */
+  }
+  
