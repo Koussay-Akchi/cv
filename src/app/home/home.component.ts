@@ -1,5 +1,6 @@
 import { Component , HostListener } from '@angular/core';
 import * as $ from 'jquery';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -10,6 +11,35 @@ import * as $ from 'jquery';
 export class HomeComponent {
 
   private animated = false;
+  constructor(private router: Router) {}
+
+  showOverlay(): void {
+    const overlay = document.createElement('div');
+    overlay.classList.add('overlayfr');
+    document.body.appendChild(overlay);
+
+    setTimeout(() => {
+      this.router.navigate(['/fr']);
+    }, 900);
+    
+    
+    setTimeout(() => {
+      overlay.classList.add('showr');
+      setTimeout(() => {
+        overlay.style.backgroundColor = 'dodgerblue';
+      }, 200);
+    }, 10);
+    
+    setTimeout(() => {
+      overlay.classList.remove('showr');
+      setTimeout(() => {
+        overlay.remove();
+      }, 400);
+      setTimeout(() => {
+        overlay.style.backgroundColor = 'grey';
+      }, 100);
+    }, 1000);
+  }
 
   @HostListener('window:scroll', ['$event'])
   onScroll(event: Event): void {

@@ -50,9 +50,13 @@ nav ul li {
 	margin-right: 1rem;
 }
 
+.lan{
+  transition: transform 250ms;
+}
+
 
 .lan:hover{
-    transform: scale(1.2)
+    transform: scale(1.2) translateY(-5px);
   }
 
   .sidebar{
@@ -106,13 +110,32 @@ h1 {
     padding-bottom: 30px;
     padding-top: 30px;
     text-align: center;
+    animation-name: bounce-up;
+    animation-duration: 2s;
+}
+
+@keyframes bounce-up {
+  0% {
+    transform: translate(-0%, -0%);
+  }
+  25% {
+    transform: translate(-0%, -10%);
+  }
+  50% {
+    transform: translate(-0%, -0%);
+  }
+  75% {
+    transform: translate(-0%, -10%);
+  }
+  100% {
+    transform: translate(-0%, -0%);
+  }
 }
 
 .percentage-bar {
     background: #fff;
     display: block;
     height: 50px;
-    margin-bottom: 15px;
     position: relative;
     transition: 0.4s linear;
     -moz-transition: 0.4s linear;
@@ -161,6 +184,7 @@ h1 {
     top: 0;
 }
 
+section.percentage-bar:last-child { margin-bottom: 15px; }
 
 section.percentage-bar:first-child div.title { background: 	#4B8BBE; }
 section.percentage-bar:first-child div.bar { background: #4B8BBE; }
@@ -185,3 +209,55 @@ section.percentage-bar:nth-child(7) div.bar { background: goldenrod; }
 
 section.percentage-bar:nth-child(8) div.title { background: #561e9e; }
 section.percentage-bar:nth-child(8) div.bar { background: #6f37db; }
+
+.overlayfr {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100%;
+  background-color:grey;
+  z-index: 9999;
+  transition:background-color 0.2s ease-in-out,  all 0.4s ease-out;
+}
+
+.showr {
+  right: 0;
+}
+
+
+.overlayen {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: grey;;
+  z-index: 999;
+  transition: background-color 0.2s ease-in-out, all 0.4s ease-in-out; 
+}
+
+.showl {
+  left: 0;
+}
+
+.overlayhome {
+  position: fixed;
+  top: -100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  z-index: 999;
+  transition: background-color 0.4s ease-in-out, top 0.4s ease-in-out;
+}
+
+.showb {
+  top: 0;
+}
+
+.overlayhome.showb {
+  background-color: #333;
+}

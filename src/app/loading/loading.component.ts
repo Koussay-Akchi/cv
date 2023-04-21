@@ -16,9 +16,34 @@ export class LoadingComponent {
     const duration = Math.floor(Math.random() * (1500 - 800 + 1) + 800);
     console.log(duration)
     setTimeout(() => {
+
+      const overlay = document.createElement('div');
+      overlay.classList.add('overlayhome');
+      document.body.appendChild(overlay);
+
+      setTimeout(() => {
+        this.router.navigate(['/en']);
+      }, 900);
+
+        overlay.classList.add('showb');
+          overlay.style.backgroundColor = '#333';
+
+      
+      setTimeout(() => {
+        overlay.classList.remove('showb');
+        setTimeout(() => {
+          overlay.remove();
+        }, 400);
+        setTimeout(() => {
+          overlay.style.backgroundColor = '#333';
+        }, 100);
+      }, 1000);
+
+
       this.loading = false;
-      this.router.navigate(['/en']); // Redirect to the home component
     }, duration);
+
+    
   }
 
 }
