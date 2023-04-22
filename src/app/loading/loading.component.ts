@@ -13,7 +13,7 @@ export class LoadingComponent {
   constructor(private router: Router) {}
 
   ngOnInit() {
-    const duration = Math.floor(Math.random() * (1500 - 800 + 1) + 800);
+    const duration = Math.floor(Math.random() * (2000 - 1500 + 1) + 1500);
     console.log(duration)
     setTimeout(() => {
 

@@ -36,7 +36,7 @@ export class FrComponent {
         overlay.remove();
       }, 400);
       setTimeout(() => {
-        overlay.style.backgroundColor = 'grey';
+        overlay.style.backgroundColor = '#131f55';
       }, 100);
     }, 1000);
   }
