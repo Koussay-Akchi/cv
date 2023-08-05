@@ -211,8 +211,11 @@ section.percentage-bar:nth-child(6) div.bar { background: grey; }
 section.percentage-bar:nth-child(7) div.title { background: goldenrod; }
 section.percentage-bar:nth-child(7) div.bar { background: goldenrod; }
 
-section.percentage-bar:nth-child(8) div.title { background: #561e9e; }
-section.percentage-bar:nth-child(8) div.bar { background: #6f37db; }
+section.percentage-bar:nth-child(8) div.title { background: #d35400; }
+section.percentage-bar:nth-child(8) div.bar { background: #d35400; }
+
+section.percentage-bar:nth-child(9) div.title { background: #4B8BBE; }
+section.percentage-bar:nth-child(9) div.bar { background: #4B8BBE; }
 
 section.percentage-bar.spanish div.bar {
   background: orange;
@@ -229,6 +232,15 @@ section.percentage-bar.arabic div.bar {
 section.percentage-bar.arabic div.title {
   background: #006400;
 }
+
+section.percentage-bar.c-sharp div.bar {
+  background: #561e9e;
+}
+
+section.percentage-bar.c-sharp div.title {
+  background: #561e9e;
+}
+
 
 
 
