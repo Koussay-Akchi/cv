@@ -17,7 +17,7 @@ body{
     width: 100%;
   }
 
-.avatar{ 
+.avatar{  
     width: 100px; 
     height: 100px; 
     border-radius: 50px;
@@ -66,14 +66,11 @@ img{
 
   .sidebar{
     text-align: center;
-  }
-
-
-  .sidebar {
     padding: 20px;
     color: white;
     border-radius: 50px;
   }
+  
   .lan{
     display: flex;
     justify-content: center;
